@@ -1,0 +1,648 @@
+2024-06-29 09:46:21 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 6265 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 09:46:21 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 09:46:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 09:46:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 09:46:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 09:46:24 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 09:46:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 09:46:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 09:46:24 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 09:46:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2224 ms
+2024-06-29 09:46:24 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController': Unsatisfied dependency expressed through field 'bookService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'app.spring.boot.mongo.cache.service.BookService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-29 09:46:24 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-29 09:46:24 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-29 09:46:24 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field bookService in app.spring.boot.mongo.cache.controller.BookController required a bean of type 'app.spring.boot.mongo.cache.service.BookService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'app.spring.boot.mongo.cache.service.BookService' in your configuration.
+
+2024-06-29 09:47:31 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 6345 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 09:47:31 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 09:47:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 09:47:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 09:47:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 09:47:32 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 09:47:32 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 09:47:32 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 09:47:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 09:47:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1041 ms
+2024-06-29 09:47:34 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 09:47:34 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+2024-06-29 09:47:34 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27017
+2024-06-29 09:47:34 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24617671}
+2024-06-29 09:47:35 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 09:47:35 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-06-29 09:47:35 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-29 09:47:35 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-29 09:47:35 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2024-06-29 09:47:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-06-29 09:47:35 INFO  a.s.boot.mongo.cache.Application - Started Application in 4.449 seconds (JVM running for 4.828)
+2024-06-29 09:50:04 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 6445 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 09:50:04 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 09:50:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 09:50:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 09:50:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 09:50:05 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 09:50:05 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 09:50:05 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 09:50:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 09:50:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1084 ms
+2024-06-29 09:50:06 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 09:50:06 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2024-06-29 09:50:06 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:18}] to localhost:27017
+2024-06-29 09:50:06 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23836055}
+2024-06-29 09:50:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 09:50:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-06-29 09:50:06 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-29 09:50:06 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-29 09:50:06 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2024-06-29 09:50:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-06-29 09:50:06 INFO  a.s.boot.mongo.cache.Application - Started Application in 2.538 seconds (JVM running for 2.941)
+2024-06-29 09:50:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-29 09:50:45 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@27527557
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5e59219b
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-29 09:50:45 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/book/12345", parameters={}
+2024-06-29 09:50:45 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#getBook(long)
+2024-06-29 09:50:45 INFO  a.s.b.m.c.controller.BookController - Inside method get Book..
+2024-06-29 09:50:45 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:19}] to localhost:27017
+2024-06-29 09:50:45 ERROR a.s.b.m.c.s.impl.BookServiceImpl - The book with the given Id is not present
+2024-06-29 09:50:45 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [*/*]
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2024-06-29 09:50:45 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-06-29 09:50:45 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2024-06-29 09:50:45 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2024-06-29 09:50:45 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-29 09:50:46 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 09:50:46 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 29 09:50:45 IST 2024, status=404, error=Not Found, path=/favicon.ico}]
+2024-06-29 09:50:46 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2024-06-29 09:51:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/book/12345", parameters={}
+2024-06-29 09:51:55 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#getBook(long)
+2024-06-29 09:51:55 INFO  a.s.b.m.c.controller.BookController - Inside method get Book..
+2024-06-29 09:51:55 ERROR a.s.b.m.c.s.impl.BookServiceImpl - The book with the given Id is not present
+2024-06-29 09:51:55 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [*/*]
+2024-06-29 09:51:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 09:56:53 DEBUG o.s.web.servlet.DispatcherServlet - POST "/books", parameters={}
+2024-06-29 09:56:53 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-06-29 09:56:53 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2024-06-29 09:56:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2024-06-29 09:56:53 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-06-29 09:56:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-29 09:56:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 09:56:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 29 09:56:53 IST 2024, status=404, error=Not Found, path=/books}]
+2024-06-29 09:56:53 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2024-06-29 09:57:17 DEBUG o.s.web.servlet.DispatcherServlet - GET "/books/12345", parameters={}
+2024-06-29 09:57:17 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-06-29 09:57:17 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2024-06-29 09:57:17 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2024-06-29 09:57:17 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2024-06-29 09:57:17 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-29 09:57:17 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 09:57:17 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 29 09:57:17 IST 2024, status=404, error=Not Found, path=/books/12345}]
+2024-06-29 09:57:17 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2024-06-29 09:57:26 DEBUG o.s.web.servlet.DispatcherServlet - GET "/book/12345", parameters={}
+2024-06-29 09:57:26 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#getBook(long)
+2024-06-29 09:57:26 INFO  a.s.b.m.c.controller.BookController - Inside method get Book..
+2024-06-29 09:57:26 ERROR a.s.b.m.c.s.impl.BookServiceImpl - The book with the given Id is not present
+2024-06-29 09:57:26 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-06-29 09:57:26 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 09:59:52 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book", parameters={}
+2024-06-29 09:59:52 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 09:59:52 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@417ce5e9]
+2024-06-29 09:59:52 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 09:59:54 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-06-29 09:59:54 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2024-06-29 09:59:54 DEBUG o.s.web.servlet.DispatcherServlet - Completed 406 NOT_ACCEPTABLE
+2024-06-29 09:59:54 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-06-29 09:59:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-29 09:59:54 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 09:59:54 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 29 09:59:54 IST 2024, status=406, error=Not Acceptable, path=/book}]
+2024-06-29 09:59:54 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 406
+2024-06-29 10:01:56 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 12098 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 10:01:56 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 10:01:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 10:01:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 10:01:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 10:01:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 10:01:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 10:01:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 10:01:59 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 10:01:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2510 ms
+2024-06-29 10:01:59 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 10:02:00 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:20}] to localhost:27017
+2024-06-29 10:02:00 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:21}] to localhost:27017
+2024-06-29 10:02:00 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=45114477}
+2024-06-29 10:02:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 10:02:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-06-29 10:02:00 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-29 10:02:00 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-29 10:02:00 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2024-06-29 10:02:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-06-29 10:02:00 INFO  a.s.boot.mongo.cache.Application - Started Application in 5.373 seconds (JVM running for 7.127)
+2024-06-29 10:02:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-29 10:02:12 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-29 10:02:12 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-29 10:02:12 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-29 10:02:12 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-29 10:02:12 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2b2c61c1
+2024-06-29 10:02:12 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@53720db8
+2024-06-29 10:02:12 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-29 10:02:12 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-06-29 10:02:12 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book", parameters={}
+2024-06-29 10:02:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:02:12 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@2ccc5302]
+2024-06-29 10:02:12 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:02:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:22}] to localhost:27017
+2024-06-29 10:02:13 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:02:13 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@2ccc5302]
+2024-06-29 10:02:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:02:57 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book", parameters={}
+2024-06-29 10:02:57 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:02:57 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@2b7a4cfb]
+2024-06-29 10:02:57 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:02:57 DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.dao.DuplicateKeyException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: springMongoCache.books index: _id_ dup key: { _id: 0 }', details={}}.; nested exception is com.mongodb.MongoWriteException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: springMongoCache.books index: _id_ dup key: { _id: 0 }', details={}}.
+2024-06-29 10:02:57 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: springMongoCache.books index: _id_ dup key: { _id: 0 }', details={}}.; nested exception is com.mongodb.MongoWriteException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: springMongoCache.books index: _id_ dup key: { _id: 0 }', details={}}.] with root cause
+com.mongodb.MongoWriteException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: springMongoCache.books index: _id_ dup key: { _id: 0 }', details={}}.
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1018)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:471)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:454)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:448)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$16(MongoTemplate.java:1485)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:560)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1479)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1279)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1194)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy63.save(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy63.save(Unknown Source)
+	at app.spring.boot.mongo.cache.service.impl.BookServiceImpl.addBook(BookServiceImpl.java:26)
+	at app.spring.boot.mongo.cache.controller.BookController.addBook(BookController.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-06-29 10:02:57 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={}
+2024-06-29 10:02:57 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-29 10:02:57 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:02:57 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 29 10:02:57 IST 2024, status=500, error=Internal Server Error, path=/book}]
+2024-06-29 10:02:57 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2024-06-29 10:09:02 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 12285 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 10:09:02 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 10:09:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 10:09:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 10:09:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 10:09:03 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 10:09:03 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 10:09:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 10:09:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 10:09:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1082 ms
+2024-06-29 10:09:03 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 10:09:03 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:23}] to localhost:27017
+2024-06-29 10:09:03 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:24}] to localhost:27017
+2024-06-29 10:09:03 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27522319}
+2024-06-29 10:09:03 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 10:09:03 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-06-29 10:09:03 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-29 10:09:03 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-29 10:09:03 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2024-06-29 10:09:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-06-29 10:09:03 INFO  a.s.boot.mongo.cache.Application - Started Application in 2.519 seconds (JVM running for 2.888)
+2024-06-29 10:09:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-29 10:09:19 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72b98028
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3576d2e
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-29 10:09:19 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book", parameters={}
+2024-06-29 10:09:19 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:09:19 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@3f72210b]
+2024-06-29 10:09:19 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:09:19 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:25}] to localhost:27017
+2024-06-29 10:09:19 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:09:19 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@3f72210b]
+2024-06-29 10:09:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:36:43 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book?objectId=667f8ff7b8a62f0c3039eb8c&name=Second%20Book", parameters={masked}
+2024-06-29 10:36:43 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:36:43 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@e258276]
+2024-06-29 10:36:43 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:36:43 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:36:43 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@e258276]
+2024-06-29 10:36:43 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:37:08 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book?objectId=667f8ff7b8a62f0c3039eb8c&name=Second%20Book", parameters={masked}
+2024-06-29 10:37:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:37:08 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@59a8b361]
+2024-06-29 10:37:08 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:37:08 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:37:08 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@59a8b361]
+2024-06-29 10:37:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:37:48 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book?objectId=667f8ff7b8a62f0c3039eb8c&name=Second%20Book", parameters={masked}
+2024-06-29 10:37:48 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:37:48 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@2a423851]
+2024-06-29 10:37:48 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:37:48 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:37:48 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@2a423851]
+2024-06-29 10:37:48 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:40:09 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book?objectId=667f8ff7b8a62f0c3039eb8c&name=Second%20Book", parameters={masked}
+2024-06-29 10:40:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:40:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@43fa6956]
+2024-06-29 10:40:09 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:40:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:40:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@43fa6956]
+2024-06-29 10:40:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:42:01 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book?objectId=667f8ff7b8a62f0c3039eb8c&name=Second%20Book", parameters={masked}
+2024-06-29 10:42:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:42:01 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@52274ffc]
+2024-06-29 10:42:01 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:42:01 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:42:01 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@52274ffc]
+2024-06-29 10:42:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:42:47 DEBUG o.s.web.servlet.DispatcherServlet - POST "/book?objectId=667f8ff7b8a62f0c3039eb8c&name=Second%20Book", parameters={masked}
+2024-06-29 10:42:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#addBook(Book)
+2024-06-29 10:42:47 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [app.spring.boot.mongo.cache.model.Book@c6d0244]
+2024-06-29 10:42:47 INFO  a.s.b.m.c.controller.BookController - Inside method addBook..
+2024-06-29 10:42:47 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:42:47 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@c6d0244]
+2024-06-29 10:42:47 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 10:43:39 DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/book/667f8ff7b8a62f0c3039eb8c", parameters={}
+2024-06-29 10:43:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#deleteBook(long)
+2024-06-29 10:43:39 DEBUG o.s.web.method.HandlerMethod - Could not resolve parameter [0] in public app.spring.boot.mongo.cache.model.Book app.spring.boot.mongo.cache.controller.BookController.deleteBook(long): Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "667f8ff7b8a62f0c3039eb8c"
+2024-06-29 10:43:39 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "667f8ff7b8a62f0c3039eb8c"]
+2024-06-29 10:43:39 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-06-29 10:43:39 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for DELETE "/error", parameters={}
+2024-06-29 10:43:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-29 10:43:39 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 10:43:39 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 29 10:43:39 IST 2024, status=400, error=Bad Request, path=/book/667f8ff7b8a62f0c3 (truncated)...]
+2024-06-29 10:43:39 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2024-06-29 10:45:39 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 12823 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 10:45:39 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 10:45:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 10:45:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 10:45:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 10:45:40 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 10:45:40 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 10:45:40 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 10:45:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 10:45:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1138 ms
+2024-06-29 10:45:40 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 10:45:40 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:40}] to localhost:27017
+2024-06-29 10:45:40 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:41}] to localhost:27017
+2024-06-29 10:45:40 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21867518}
+2024-06-29 10:45:41 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 10:45:41 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book) mapped.
+2024-06-29 10:45:41 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-29 10:45:41 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-29 10:45:41 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at app.spring.boot.mongo.cache.Application.main(Application.java:9)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2024-06-29 11:02:42 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 13100 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 11:02:42 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 11:02:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 11:02:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 11:02:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 11:02:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 11:02:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 11:02:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 11:02:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 11:02:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1267 ms
+2024-06-29 11:02:44 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 11:02:44 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:43}] to localhost:27017
+2024-06-29 11:02:44 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:42}] to localhost:27017
+2024-06-29 11:02:44 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21836340}
+2024-06-29 11:02:44 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 11:02:44 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book) mapped.
+2024-06-29 11:02:44 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-29 11:02:45 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-29 11:02:45 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at app.spring.boot.mongo.cache.Application.main(Application.java:9)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2024-06-29 11:03:59 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 13205 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 11:03:59 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 11:04:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 11:04:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 11:04:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 11:04:00 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 11:04:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 11:04:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 11:04:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 11:04:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1048 ms
+2024-06-29 11:04:00 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 11:04:00 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:44}] to localhost:27017
+2024-06-29 11:04:00 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:45}] to localhost:27017
+2024-06-29 11:04:00 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27521845}
+2024-06-29 11:04:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 11:04:01 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book) mapped.
+2024-06-29 11:04:01 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-29 11:04:01 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-29 11:04:01 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at app.spring.boot.mongo.cache.Application.main(Application.java:9)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'bookController' method 
+app.spring.boot.mongo.cache.controller.BookController#updateBookWithIdAndName(String, String, Book)
+to {PUT [/book]}: There is already 'bookController' bean method
+app.spring.boot.mongo.cache.controller.BookController#updateBook(Book) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2024-06-29 11:05:10 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 13292 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 11:05:10 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 11:05:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 11:05:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 11:05:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 11:05:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 11:05:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 11:05:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 11:05:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 11:05:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1139 ms
+2024-06-29 11:05:11 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 11:05:12 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:47}] to localhost:27017
+2024-06-29 11:05:12 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:46}] to localhost:27017
+2024-06-29 11:05:12 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=58374200}
+2024-06-29 11:05:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 11:05:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-06-29 11:05:12 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-29 11:05:12 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-29 11:05:12 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2024-06-29 11:05:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-06-29 11:05:12 INFO  a.s.boot.mongo.cache.Application - Started Application in 2.697 seconds (JVM running for 3.064)
+2024-06-29 11:05:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-29 11:05:42 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-29 11:05:42 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-29 11:05:42 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-29 11:05:42 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-29 11:05:42 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@315f6ae4
+2024-06-29 11:05:42 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@34c63abb
+2024-06-29 11:05:42 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-29 11:05:42 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-29 11:05:42 DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/book/667f8ff7b8a62f0c3039eb8c", parameters={}
+2024-06-29 11:05:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#deleteBook(String)
+2024-06-29 11:05:42 INFO  a.s.b.m.c.controller.BookController - Inside method delete Book..
+2024-06-29 11:05:43 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:48}] to localhost:27017
+2024-06-29 11:05:44 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 11:05:44 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@517ac045]
+2024-06-29 11:05:44 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 11:07:21 INFO  a.s.boot.mongo.cache.Application - Starting Application using Java 11.0.23 on sumit-Inspiron-5570 with PID 13462 (/home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache/target/classes started by sumit in /home/sumit/Documents/JavaProject/SpringSecurityJWTMongo/spring-boot-mongodb-cache)
+2024-06-29 11:07:21 INFO  a.s.boot.mongo.cache.Application - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 11:07:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-29 11:07:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 MongoDB repository interfaces.
+2024-06-29 11:07:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-06-29 11:07:22 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-06-29 11:07:22 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-29 11:07:22 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-29 11:07:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-29 11:07:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1174 ms
+2024-06-29 11:07:22 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-29 11:07:22 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:49}] to localhost:27017
+2024-06-29 11:07:22 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:50}] to localhost:27017
+2024-06-29 11:07:22 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18279747}
+2024-06-29 11:07:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-29 11:07:23 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2024-06-29 11:07:23 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-29 11:07:23 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-29 11:07:23 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2024-06-29 11:07:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-06-29 11:07:23 INFO  a.s.boot.mongo.cache.Application - Started Application in 3.044 seconds (JVM running for 3.621)
+2024-06-29 11:07:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-29 11:07:30 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@bbd17c
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@52d8dba8
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-29 11:07:30 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/book/667f8ff7b8a62f0c3039eb8c", parameters={}
+2024-06-29 11:07:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#getBook(String)
+2024-06-29 11:07:30 INFO  a.s.b.m.c.controller.BookController - Inside method get Book..
+2024-06-29 11:07:30 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:51}] to localhost:27017
+2024-06-29 11:07:30 ERROR a.s.b.m.c.s.impl.BookServiceImpl - The book with the given Id is not present
+2024-06-29 11:07:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 11:07:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2024-06-29 11:07:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-29 11:08:00 DEBUG o.s.web.servlet.DispatcherServlet - GET "/book/667f967cb8a62f0c3039eb8e", parameters={}
+2024-06-29 11:08:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to app.spring.boot.mongo.cache.controller.BookController#getBook(String)
+2024-06-29 11:08:00 INFO  a.s.b.m.c.controller.BookController - Inside method get Book..
+2024-06-29 11:08:00 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-29 11:08:00 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [app.spring.boot.mongo.cache.model.Book@2e3fa33c]
+2024-06-29 11:08:00 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
